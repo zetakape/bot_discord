@@ -13,7 +13,7 @@ import { getShuffledOptions, getResult } from './game.js';
 // Create an express app
 const app = express();
 // Get port, or default to 3000
-const PORT = process.env.PORT || 3008;
+const PORT = 3000;// process.env.PORT || 3008;
 // Parse request body and verifies incoming requests using discord-interactions package
 app.use(express.json({ verify: VerifyDiscordRequest(process.env.PUBLIC_KEY) }));
 
